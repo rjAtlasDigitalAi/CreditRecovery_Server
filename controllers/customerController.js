@@ -55,24 +55,7 @@ exports.createCustomer = async (req, res) => {
   }
 };
 
-// // ✅ Get All Customers
-// exports.getCustomers = async (req, res) => {
-//   try {
-//     const customers = await Customer.find().sort({ createdAt: -1 });
 
-//     res.json({
-//       success: true,
-//       count: customers.length,
-//       data: customers,
-//     });
-//   } catch (error) {
-//     res.status(500).json({
-//       success: false,
-//       message: "Error fetching customers",
-//       error: error.message,
-//     });
-//   }
-// };
 
 // ✅ Get Single Customer
 exports.getCustomerById = async (req, res) => {

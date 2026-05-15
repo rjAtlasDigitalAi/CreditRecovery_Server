@@ -4,8 +4,6 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 
 
-// 🔥 IMPORT AUTO REMINDER
-require("./services/autoReminder");
 
 dotenv.config();
 connectDB();
@@ -24,6 +22,7 @@ app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 app.use("/api/message-logs", require("./routes/messageLogRoutes"));
 app.use("/api/reminders", require("./routes/reminderRoutes"));
 app.use("/api/upload",require("./routes/photouploadRoutes"));
+app.use("/api/cron", require("./routes/cronRoutes"));
 
 
 

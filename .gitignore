@@ -1,7 +1,74 @@
-.env
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-credit-recovery-90683-9c9229e81316.json
-even-research-489211-s2-3b3056fe3da0.json
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
 node_modules/
 
-# config/vision.js
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build folders
+dist/
+build/
+
+# Coverage
+coverage/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
+
+# PM2
+.pm2/
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Uploads
+uploads/
+public/uploads/
+
+# Cache
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Render
+.render/
+
+# Railway
+.railway/
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+*.zip
+*.tar
+*.gz
