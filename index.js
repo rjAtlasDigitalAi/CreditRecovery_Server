@@ -24,7 +24,7 @@ app.use("/api/reminders", require("./routes/reminderRoutes"));
 app.use("/api/upload",require("./routes/photouploadRoutes"));
 app.use("/api/cron", require("./routes/cronRoutes"));
 
-
+app.get("/", (req, res) => res.send("Credit Recovery Server Running"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
