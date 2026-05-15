@@ -1,3 +1,11 @@
+process.on("uncaughtException", (err) => {
+  console.error("UNCAUGHT EXCEPTION:", err);
+});
+
+process.on("unhandledRejection", (err) => {
+  console.error("UNHANDLED REJECTION:", err);
+});
+
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
@@ -20,7 +28,6 @@ app.use("/api/excel",require("./routes/excelRoutes"));
 app.use("/api/customers", require("./routes/customerRoutes"));
 app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 app.use("/api/message-logs", require("./routes/messageLogRoutes"));
-app.use("/api/reminders", require("./routes/reminderRoutes"));
 app.use("/api/upload",require("./routes/photouploadRoutes"));
 app.use("/api/cron", require("./routes/cronRoutes"));
 
